@@ -9,8 +9,11 @@ Thought of different models, had a dry run, read and reasearched about different
 1. Where first I gathered multiple images more for medical dataset compared to non-medical dataset. The dataset was big enough, medical dataset had nearly 10k images and non medical also had somewhere around 1k.
 2. Used split_dataset.py to split the dataset unto train/val/test, then used it to train the model, after training the model I tested it and generated evaluation results like accuracy, precision, recall, F1 score and Confusion Matrix.
  <img width="414" height="228" alt="image" src="https://github.com/user-attachments/assets/4ae77600-394d-461c-a158-1044d0014737" />
+ <p style="font-size: small; font-style: italic;">Evaluation results & Confusion matrix</p>
 
-3. Moving further ahead I loaded the model to the streamlit app for the purpose of classifying image from pdf and url's, which are extracted, classified and give you three options first to "Download predictions CSV" (comes with the confidence score), "Download MEDICAL images ZIP" & "Download NON-MEDICAL images ZIP" i.e, from the classified images you can seperate them and install into two different zip files as per their label. 
+3. Moving further ahead I loaded the model to the streamlit app for the purpose of classifying image from pdf and url's, which are extracted, classified and give you three options first to "Download predictions CSV" (comes with the confidence score), "Download MEDICAL images ZIP" & "Download NON-MEDICAL images ZIP" i.e, from the classified images you can seperate them and install into two different zip files as per their label.
+
+
 
 
 ## Project structure (root)
