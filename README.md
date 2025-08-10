@@ -79,6 +79,17 @@ data/
    - The app will extract, classify and allow you to download results.
 
 
+Folder Complete Structure
+
+<img width="850" height="526" alt="image" src="https://github.com/user-attachments/assets/58bd597a-5cf4-41dc-8ddd-ae5815703c2c" />
+
+
+
+Links:- 
+
+   - [Link to all_images dataset](https://drive.google.com/drive/folders/10T-3wRP8-Ps4szhYR8zacDDZOib6UmF9?usp=sharing)
+   - 
+   
 
 
 
