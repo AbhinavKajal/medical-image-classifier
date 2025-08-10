@@ -77,10 +77,10 @@ data/
    ```
    python train.py --data_dir data --epochs 5 --batch_size 16 --lr 1e-4
    ```
-   Model saved to `models/resnet50_trained.pth`.
+   Model saved to `models/resnet50_trained.pth`.  ## add you model path to yout test and app .py file
 5. Evaluate on test set:
    ```
-   python test_model.py --model models/resnet50_trained.pth --data_dir data
+   python test_model.py --model models/resnet50_trained.pth --data_dir data 
    ```
 6. Run Streamlit app:
    ```
