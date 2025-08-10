@@ -1,15 +1,19 @@
-# medical-image-classifier
+# Medical-image-classifier
 Image Classifier — A ResNet-50 based Streamlit app that classifies images as medical or non-medical. 
 
 This repository contains a complete pipeline for building a binary image classifier (medical vs non-medical)
 and a Streamlit app to extract images from PDFs / URLs and classify them.
+
+## Approach & Reasoning
+Thought of different models, had a dry run, read and reasearched about different sort of models but I finally ended up using ResNet50. Before it I tried CLIP, Open AI API & ResNet18 but none of them felt satisfactory. CLIP & Open AI API felt very easy nothing to train or tune or anything, ResNet18 had a little more speed at the cost of accuracy but as the task is about classifying medical and non medical images I thought that accuracy should be at the frontfoot instead of speed, so at the end I opted ResNet50. Where first I gathered multiple images more for medical dataset compared to non-medical dataset. The dataset was big enough, medical dataset had nearly 10k images and non medical also had somewhere around 1k.Used split_dataset.py to split the dataset unto train/val/test, then used it to train the model, after training the model I tested it and generated evaluation results like accuracy, precision, recall, F1 score and Confusion Matrix. Moving further ahead I loaded the model to the streamlit app for the purpose of classifying image from pdf and url's, which are extracted, classified and give you three options first to "Download predictions CSV" (comes with the confidence score), "Download MEDICAL images ZIP" & "Download NON-MEDICAL images ZIP" i.e, from the classified images you can seperate them and install into two different zip files as per their label. 
+
 
 ## Project structure (root)
 - split_dataset.py       : Script to split a folder with class subfolders into train/val/test
 - train.py               : Train script using PyTorch + pretrained ResNet-50
 - test_model.py          : Evaluate the saved model on data/test and save confusion matrix
 - utils.py               : Utilities (PDF/URL extraction, model loading, inference)
-- streamlit_app.py       : Streamlit application to extract and classify images
+- app.py                 : Streamlit application to extract and classify images
 - requirements.txt       : Python dependencies
 - models/                : Saved model files (models/resnet50_trained.pth)
 - data/                  : Empty by default. After running split_dataset.py it will contain train/val/test subfolders.
