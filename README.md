@@ -13,6 +13,8 @@ Thought of different models, had a dry run, read and reasearched about different
 ## Accuracy results & Confusion Matrix
   <img width="389" height="249" alt="image" src="https://github.com/user-attachments/assets/9a3edd0f-175a-4aca-97aa-e79ad24855d4" />
 
+## Performance/efficiency considerations
+
 ## Project structure (root)
 - split_dataset.py       : Script to split a folder with class subfolders into train/val/test
 - train.py               : Train script using PyTorch + pretrained ResNet-50
