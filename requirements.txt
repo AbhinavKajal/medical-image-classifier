@@ -1,0 +1,15 @@
+torch
+torchvision
+pillow
+pdf2image
+beautifulsoup4
+requests
+streamlit
+pandas
+scikit-learn
+matplotlib
+tqdm
+streamlit
+pymupdf
+Pillow
+requests
