@@ -14,6 +14,17 @@ Thought of different models, had a dry run, read and reasearched about different
   <img width="389" height="249" alt="image" src="https://github.com/user-attachments/assets/9a3edd0f-175a-4aca-97aa-e79ad24855d4" />
 
 ## Performance/efficiency considerations
+Results - Total inference time on 2280 images: 12.2345 seconds
+          Average inference time per image: 0.005366 seconds
+
+- Used ResNet-50 model for higher accuracy, accepting longer training time and more compute.
+- Enabled mixed precision training (AMP) to speed up training and reduce memory on CUDA GPUs.
+- Optimized batch size and epochs to balance accuracy and training duration.
+- Used PyTorch DataLoader with multiple workers and pin_memory=True for faster data loading.
+- Saved best model checkpoints per epoch to avoid retraining from scratch.
+- Automatic device selection (GPU if available, else CPU).
+- Recommended cloud GPU (e.g., Google Colab with T4) to speed up training significantly compared to CPU.
+- Handled missing GPU gracefully with warnings and fallback to CPU.
 
 ## Project structure (root)
 - split_dataset.py       : Script to split a folder with class subfolders into train/val/test
