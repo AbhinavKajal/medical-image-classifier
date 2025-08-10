@@ -8,8 +8,7 @@ and a Streamlit app to extract images from PDFs / URLs and classify them.
 Thought of different models, had a dry run, read and reasearched about different sort of models but I finally ended up using ResNet50. Before it I tried CLIP, Open AI API & ResNet18 but none of them felt satisfactory. CLIP & Open AI API felt very easy nothing to train or tune or anything, ResNet18 had a little more speed at the cost of accuracy but as the task is about classifying medical and non medical images I thought that accuracy should be at the frontfoot instead of speed, so at the end I opted ResNet50. 
 1. Where first I gathered multiple images more for medical dataset compared to non-medical dataset. The dataset was big enough, medical dataset had nearly 10k images and non medical also had somewhere around 1k.
 2. Used split_dataset.py to split the dataset unto train/val/test, then used it to train the model, after training the model I tested it and generated evaluation results like accuracy, precision, recall, F1 score and Confusion Matrix.
- <img width="414" height="228" alt="image" src="https://github.com/user-attachments/assets/4ae77600-394d-461c-a158-1044d0014737" />
- <p style="font-size: small; font-style: italic;">Evaluation results & Confusion matrix</p>
+             <img width="414" height="228" alt="image" src="https://github.com/user-attachments/assets/4ae77600-394d-461c-a158-1044d0014737" />
 
 3. Moving further ahead I loaded the model to the streamlit app for the purpose of classifying image from pdf and url's, which are extracted, classified and give you three options first to "Download predictions CSV" (comes with the confidence score), "Download MEDICAL images ZIP" & "Download NON-MEDICAL images ZIP" i.e, from the classified images you can seperate them and install into two different zip files as per their label.
 
