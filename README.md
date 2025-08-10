@@ -11,7 +11,7 @@ Thought of different models, had a dry run, read and reasearched about different
 3. Moving further ahead I loaded the model to the streamlit app for the purpose of classifying image from pdf and url's, which are extracted, classified and give you three options first to "Download predictions CSV" (comes with the confidence score), "Download MEDICAL images ZIP" & "Download NON-MEDICAL images ZIP" i.e, from the classified images you can seperate them and install into two different zip files as per their label.
 
 ## Accuracy results & Confusion Matrix
-                                <img width="414" height="228" alt="image" src="https://github.com/user-attachments/assets/4ae77600-394d-461c-a158-1044d0014737" />
+  <img width="389" height="249" alt="image" src="https://github.com/user-attachments/assets/9a3edd0f-175a-4aca-97aa-e79ad24855d4" />
 
 ## Project structure (root)
 - split_dataset.py       : Script to split a folder with class subfolders into train/val/test
