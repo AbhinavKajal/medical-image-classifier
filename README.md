@@ -79,16 +79,18 @@ data/
    - The app will extract, classify and allow you to download results.
 
 
-Folder Complete Structure
+
+## Folder Complete Structure
 
 <img width="850" height="526" alt="image" src="https://github.com/user-attachments/assets/58bd597a-5cf4-41dc-8ddd-ae5815703c2c" />
 
 
 
-Links:- 
+## Links:- 
 
    - [Link to all_images dataset](https://drive.google.com/drive/folders/10T-3wRP8-Ps4szhYR8zacDDZOib6UmF9?usp=sharing)
-   - 
+   - [Link to data dataset after split.py operation on all_images](https://drive.google.com/drive/folders/1FVnHA9e4V31fjiOC3lXNtcb8-QdHHb8_?usp=sharing)
+   - [Link to resnet50_traned model](https://drive.google.com/drive/folders/1gOaF0GEBBtUw1clAk-k27h6ZJDXGgP9X?usp=sharing)
    
 
 
